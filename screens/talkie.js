@@ -23,11 +23,11 @@ function Talkie(props){
         <View style={styles.container}>
            <Text style={styles.set}>You're all set</Text>
            <View style={styles.excess}>
-            <Image style={{...styles.image, ...styles.image1}} source={require('../components/assets/Group 4 Copy 2.png')} />
-            <Image style={{...styles.image, ...styles.image2}} source={require('../components/assets/Group 4 Copy.png')} />
-            <Image style={{...styles.image, ...styles.image3}} source={require('../components/assets/Group 4.png')} />
-            <Image style={{...styles.image, ...styles.image4}} source={require('../components/assets/Group 4 Copy 3.png')} />
-            <Image style={{...styles.image, ...styles.image5}} source={require('../components/assets/Group 4 Copy 4.png')} />
+            <Image style={{...styles.image, ...styles.image1}} source={require('../components/assets/Group_4_Copy_2.png')} />
+            <Image style={{...styles.image, ...styles.image2}} source={require('../components/assets/Group_4_Copy.png')} />
+            <Image style={{...styles.image, ...styles.image3}} source={require('../components/assets/Group_4.png')} />
+            <Image style={{...styles.image, ...styles.image4}} source={require('../components/assets/Group_4_Copy_3.png')} />
+            <Image style={{...styles.image, ...styles.image5}} source={require('../components/assets/Group_4_Copy_4.png')} />
            </View> 
            <_Button title="Start ranting" textStyle={styles.buttonText} style={styles.button} onPress={()=>{props.navigation.navigate('Username')}}/>
            <Text style={styles.logText}>Start ranting with friends, create groups have fun…</Text>

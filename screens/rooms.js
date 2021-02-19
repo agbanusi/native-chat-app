@@ -30,7 +30,7 @@ function Rooms (props){
         <View style={styles.container}>
             <View style={styles.show}>
             <Image style={styles.image1} source={require('../components/assets/Group.png')} />
-            <Image style={styles.image2} source={require('../components/assets/Group 133.png')} />
+            <Image style={styles.image2} source={require('../components/assets/Group_133.png')} />
             <Image style={styles.image3} source={require('../components/assets/headphones-customer-support.png')} />
             </View>
            <View style={styles.switch}>

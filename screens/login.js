@@ -27,8 +27,8 @@ function login(props){
         <View style={styles.container}>
             <View style={styles.excess}>
                 <Text style={{alignSelf:'flex-start', position:'absolute', top:"1rem", left:"1rem"}}><Talk /></Text>
-                <Image style={styles.image1} source={require('../components/assets/Group 6 Copy 2.png')} />
-                <Image style={styles.image2} source={require('../components/assets/Group 6 Copy 3.png')} />
+                <Image style={styles.image1} source={require('../components/assets/Group_6_Copy_2.png')} />
+                <Image style={styles.image2} source={require('../components/assets/Group_6_Copy_3.png')} />
             </View>
             <View style={styles.container2}>
                 <View style={styles.meet}>

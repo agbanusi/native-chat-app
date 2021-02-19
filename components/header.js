@@ -17,7 +17,7 @@ function Header(props){
     else{
         return(
         <View style={styles.container}>
-            <Image style={styles.image1} source={require('./assets/Group 6 Copy.png')} />
+            <Image style={styles.image1} source={require('./assets/Group_6_Copy.png')} />
             <Text style={styles.text1}>{props.name}</Text>
             <View style={styles.search} >
                 <Text onPress={()=>setUp(!up)}><AntDesign name="search1" size={12} color="white" /></Text>

@@ -2,7 +2,7 @@ import React from 'react';
 import * as Font from 'expo-font';
 import { Ionicons } from '@expo/vector-icons';
 import {  View, ActivityIndicator } from 'react-native';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
 import {Provider} from 'react-redux'
 import Login from './screens/login'
@@ -17,7 +17,7 @@ import messages from './screens/messages';
 import activities from './screens/activities';
 import account from './screens/account';
 
-const Drawer = createDrawerNavigator();
+const Drawer = createStackNavigator();
 
 export default class App extends React.Component {
   constructor(props) {

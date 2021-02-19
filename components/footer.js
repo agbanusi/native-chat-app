@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import {connect} from 'react-redux'
 import Head from "./assets/headset.js"
@@ -6,7 +6,6 @@ import Conn from './assets/connect'
 import { FontAwesome } from '@expo/vector-icons';
 import { Feather } from '@expo/vector-icons';
 import { Ionicons } from '@expo/vector-icons';
-import { useState } from 'react/cjs/react.development';
 
 const mapStateToProp=(state)=>{
   return {screenName: state.screenName, navigation:state.navigation}
@@ -44,9 +43,6 @@ const styles = StyleSheet.create({
     },
     text:{
       opacity:"50%"
-    },
-    text1:{
-      color:'#fff',
     },
     rotate:{
       transform: "rotate(15deg)"

@@ -36,8 +36,8 @@ function Connection (props){
            <View style={{...styles.doner, marginLeft: on?"-25%":"25%"}}></View>
            <View style={styles.cover}>
                 <View style={{height:"6rem"}}>
-                    <Image style={styles.image1} source={require('../components/assets/Group 13.png')} />
-                    <Image style={styles.image2} source={require('../components/assets/Group 2.png')} />
+                    <Image style={styles.image1} source={require('../components/assets/Group_13.png')} />
+                    <Image style={styles.image2} source={require('../components/assets/Group_2.png')} />
                 </View>
                 <Text style={styles.name}>Muheez Akanni</Text>
                 <Text style={styles.username}>@ {props.username!==""?props.username:"creathor"}</Text>
@@ -58,7 +58,7 @@ function Connection (props){
                 </View>
                 <Text style={styles.username}>Public Rooms</Text>
                 <View style={styles.gather}>
-                    <Image style={styles.image3} source={require('../components/assets/Group 3 Copy 2.png')} />
+                    <Image style={styles.image3} source={require('../components/assets/Group_3_Copy_2.png')} />
                 </View> 
                 <_Button title="Unfollow" style={styles.button} textStyle={styles.buttonText} />
             </View>
