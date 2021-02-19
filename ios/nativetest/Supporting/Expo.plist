@@ -3,7 +3,7 @@
 <plist version="1.0">
   <dict>
     <key>EXUpdatesSDKVersion</key>
-    <string>40.0.0</string>
+    <string>38.0.0</string>
     <key>EXUpdatesURL</key>
     <string>https://exp.host/@johnny1122/native-test</string>
     <key>EXUpdatesReleaseChannel</key>
