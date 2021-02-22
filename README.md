@@ -20,3 +20,5 @@ Android Test app at https://expo.io/artifacts/98304b71-f062-4bfd-a878-bda4947897
 IOS Test app is at https://expo.io/artifacts/a463c7f9-89da-4cce-801f-b78113683068  (Stable)
 
 Mobile Web test app is at https://pedantic-bhabha-c2f09b.netlify.app
+
+Snack repo for visuals is at https://snack.expo.io/@johnny1122/github.com-agbanusi-native-chat-app
