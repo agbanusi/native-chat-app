@@ -1,6 +1,5 @@
 import * as React from "react"
 import Svg, { G, Path, SvgCss } from "react-native-svg"
-console.log(SvgCss)
 
 function SvgComponent(props) {
   return (

@@ -3,6 +3,8 @@ import {StyleSheet, View, Text, Image} from 'react-native'
 import _Button from "../components/button"
 import { useFocusEffect } from '@react-navigation/native';
 import {connect} from 'react-redux'
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+
 
 const mapDispatchToProps=(dispatch)=>{
     return{
@@ -21,7 +23,7 @@ function Talkie(props){
 
     return(
         <View style={styles.container}>
-           <Text style={styles.set}>You're all set</Text>
+           <Text style={styles.sette}>You're all set</Text>
            <View style={styles.excess}>
             <Image style={{...styles.image, ...styles.image1}} source={require('../components/assets/Group_4_Copy_2.png')} />
             <Image style={{...styles.image, ...styles.image2}} source={require('../components/assets/Group_4_Copy.png')} />
@@ -40,65 +42,65 @@ const styles = ({
         flex: 1,
         backgroundColor: '#00070F',
         alignItems: 'center',
-        padding:"0rem"
+        padding:0 
     },
     image:{
-        width: "4rem",
-        height: "5rem"
+        width: 4*16,
+        height: 5*16
     },
     image1:{
         selfAlign:'flex-start',
-        width: "4rem",
-        height: "6.5rem"
+        width: 4*16,
+        height: 6.5*16
     },
     image4:{
         selfAlign:'flex-start',
-        width: "3.5rem",
-        height: "7rem"
+        width: 3.5*16,
+        height: 7*16
     },
     image2:{
         alignSelf:'flex-end',
-        marginTop:"-5rem",
-        width: "4.5rem",
-        height: "6rem"
+        marginTop:-5*16,
+        width: 4.5*16,
+        height: 6*16
     },
     image5:{
         alignSelf:'flex-end',
-        marginTop:"-5.5rem",
-        width: "4rem",
-        height: "7.5rem"
+        marginTop: -5.5*16,
+        width: 4*16,
+        height: 7.5*16
     },
     image3:{
         alignSelf:'center',
-        width: "10rem",
-        height: "10rem"
+        width: 10*16,
+        height: 10*16
     },
-    set: {
-        fontSize:"1rem",
-        marginTop:"1.5rem",
+    sette: {
+        fontSize:1*16,
+        marginTop:1.5*16,
         color:"#fff",
         fontFamily:'CoolveticaRg'
     },
     excess:{
-        height:"70%",
-        width:"100%",
+        height:hp("67.5%"),
+        width: wp("100%"),
         display:"flex",
-        marginTop:"0.75rem"
+        marginTop:0.75*16
     },
     logText:{
-        fontSize: "0.75rem",
+        fontSize: 0.75*16,
         color: "#FFF",
-        opacity:"50%",
-        marginTop:"0.75rem",
+        opacity:0.5,
+        marginTop:0.75*16,
         fontFamily:'CoolveticaRg'
     },
     buttonText:{
         fontFamily:'CoolveticaRg',
-        fontSize:"1rem"
+        fontSize:1*16
     },
     button:{
-        width: "85%",
-        marginTop:"1.5rem"
+        width: wp("85%"),
+        marginTop:1.5*16
     }
   });
 

@@ -1,19 +1,34 @@
 {
-  "name": "native-test",
-  "displayName": "native-test",
   "expo": {
-    "name": "native-test",
-    "slug": "native-test",
+    "name": "joinnyy",
+    "slug": "hello",
     "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
     "assetBundlePatterns": [
       "**/*"
     ],
-    "android": {
-      "package": "testt.apk"
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.apk.testt"
     },
-    "packagerOpts": {
-      "config": "metro.config.js",
-      "sourceExts": ["js", "jsx", "ts", "tsx", "svg"]
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/splash.png",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "com.apk.testt"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
     }
   }
 }

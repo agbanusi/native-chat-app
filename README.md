@@ -15,4 +15,8 @@ To run on web browser using expo
 npm run web
 ```
 
-Test app at https://expo.io/artifacts/14baba25-7c74-4962-ae90-32bef61cc3ca
+Android Test app at https://expo.io/artifacts/98304b71-f062-4bfd-a878-bda49478979b  (Unstable)
+
+IOS Test app is at https://expo.io/artifacts/a463c7f9-89da-4cce-801f-b78113683068  (Stable)
+
+Mobile Web test app is at https://pedantic-bhabha-c2f09b.netlify.app

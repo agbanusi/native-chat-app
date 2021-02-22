@@ -4,6 +4,7 @@ import _Button from "../components/button"
 import { useFocusEffect } from '@react-navigation/native';
 import {connect} from 'react-redux'
 import { useState } from 'react';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 const mapStateToProp=(state)=>{
   return {screenName: state.screenName, username: state.username}
@@ -47,60 +48,60 @@ const styles = ({
       flex:1,
       backgroundColor: '#00070F',
       alignItems: 'center',
-      padding:"1.5rem"
+      padding:1.5*16
     },
     button:{
-        marginTop: "3rem"
+        marginTop:3*16
     },
     buttonText:{
         fontFamily:'CoolveticaRg'
     },
     switch:{
-        width:"70%",
+        width:wp("70%"),
         display:"flex",
         justifyContent:"center",
         
     },
     header:{
-        height:"3.5rem",
-        marginTop:"0.5rem"
+        height:3.5*16,
+        marginTop:0.5*16
     },
     name:{
-        fontSize:"1.125rem",
-        fontWeight:"500",
+        fontSize:1.125*16,
+        fontWeight:500,
         color:"#fff",
-        marginTop:"1rem",
+        marginTop:1*16,
         fontFamily:'CoolveticaRg',
         textAlign: "center",
     },
     image1:{
-        height:"6rem",
-        width: "12rem"
+        height:6*16,
+        width: 12*16
     },
     image2:{
-        height:"6rem",
-        width:"6rem",
+        height:6*16,
+        width:6*16,
         position:"absolute",
-        marginTop:"2rem"
+        marginTop:2*16
     },
     image3:{
-        height:"4rem",
-        width:"4rem",
+        height:4*16,
+        width:4*16,
         position:"absolute",
-        marginTop:"2rem"
+        marginTop:2*16
     },
     show:{
-        height:"40%", 
+        height:hp("40%"), 
         display:'flex', 
         flexDirection:'row',
         alignItems:'center',
         justifyContent:"center"
     },
     username:{
-        fontSize:"0.75rem",
+        fontSize:0.75*16,
         color:"#fff",
-        marginTop:"1.25rem",
-        opacity: "50%",
+        marginTop:1.25*16,
+        opacity: 0.5,
         fontFamily:'CoolveticaRg',
         textAlign: "center",
     },

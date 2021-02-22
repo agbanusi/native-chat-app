@@ -7,15 +7,17 @@ function Button(props) {
           style={{
             backgroundColor:"#00BF69",
             borderColor: "#00BF69",
-            borderRadius:"1.25rem",
-            height:"2.5rem",
+            borderRadius:1.25*16,
+            height:2.5*16, 
             outline: 'none',
-            padding: '0.5rem',
-            fontSize: "2rem",
+            padding: 0.5*16,
+            fontSize: 2*16,
             textAlign: "center",
-            lineHeight:"4rem",
+            lineHeight:2.5*16,
             display:"flex",
+            flexDirection:"row",
             justifyContent:"center",
+            alignItems:"center",
             width: "100%",
             ...props.style
           }}
@@ -24,7 +26,7 @@ function Button(props) {
           outline={props.outline}
           id={props.id}
         >
-          <Text style={{color:"#00070F", fontWeight:"700",...props.textStyle}}>{props.title}</Text>
+          <Text style={{color:"#00070F", fontWeight:700,...props.textStyle}}>{props.title}</Text>
         </TouchableOpacity>
     );
   }

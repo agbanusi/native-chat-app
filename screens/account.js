@@ -5,6 +5,8 @@ import { useFocusEffect } from '@react-navigation/native';
 import {connect} from 'react-redux'
 import { useState } from 'react';
 import Header from '../components/header'
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
+
 
 const mapStateToProp=(state)=>{
   return {screenName: state.screenName, username: state.username}
@@ -33,9 +35,9 @@ function Connection (props){
                 <Text style={{...styles.name, opacity:on?"100%":"50%"}} onPress={()=>setOn(true)}>PROFILE</Text>
                 <Text style={{...styles.name, opacity:!on?"100%":"50%"}} onPress={()=>setOn(false)}>SETTINGS</Text>
            </View>
-           <View style={{...styles.doner, marginLeft: on?"-25%":"25%"}}></View>
+           <View style={{...styles.doner, marginLeft: on?-100:100}}></View>
            <View style={styles.cover}>
-                <View style={{height:"6rem"}}>
+                <View style={{height:6*16}}>
                     <Image style={styles.image1} source={require('../components/assets/Group_13.png')} />
                     <Image style={styles.image2} source={require('../components/assets/Group_2.png')} />
                 </View>
@@ -71,12 +73,12 @@ const styles = ({
       flex:1,
       backgroundColor: '#00070F',
       alignItems: 'center',
-      padding:"1.5rem",
-      paddingTop:"0rem",
-      paddingBottom:"0rem"
+      padding:1.5*16,
+      paddingTop:0*16,
+      paddingBottom:0*16
     },
     switch:{
-        width:"60%",
+        width:wp("60%"),
         display:"flex",
         flexDirection:"row",
         alignItems:"center",
@@ -88,79 +90,81 @@ const styles = ({
         alignItems:'center'
     },
     doner:{
-        height:"0.25rem", 
-        width:"1rem", 
+        height:0.25*16, 
+        width:1*16, 
         backgroundColor:"#00BF69", 
-        borderRadius:"0.125rem",
-        marginBottom:"1rem",
-        marginTop:"0.125rem"
+        borderRadius:0.125*16,
+        marginBottom:1*16,
+        marginTop:0.125*16
     },
     cover:{
-        borderRadius:"2rem",
+        borderRadius:2*16,
         backgroundColor: "#0D131B",
-        width:"90%",
-        padding:"1rem",
+        width:wp("90%"),
+        padding:1*16,
         display:'flex',
         alignItems:'center',
-        marginBottom:"1.5rem",
+        marginBottom:1.5*16,
         flex:1
     },
     name:{
-        fontSize:"1.125rem",
-        fontWeight:"500",
+        fontSize:1.125*16,
+        fontWeight:500,
         color:"#fff",
-        marginTop:"0.5rem",
+        marginTop:0.5*16,
         fontFamily:'CoolveticaRg'
     },
     username:{
-        fontSize:"0.75rem",
+        fontSize:0.75*16,
         color:"#fff",
-        marginTop:"0.25rem",
-        opacity: "50%",
+        marginTop:0.25*16,
+        opacity: 50,
         fontFamily:'CoolveticaRg'
     },
     numbers:{
-        width:"100%",
+        width:wp("100%"),
         display:"flex",
         flexDirection:"row",
         alignItems:"center",
         justifyContent:"space-around",
-        marginBottom:"1rem",
-        marginTop:"1rem"
+        marginBottom:1*16,
+        marginTop: 1*16
     },
     gather:{
-        width:"50%",
+        width:wp("50%"),
         display:"flex",
         flexDirection:"row",
         alignItems:"center",
         justifyContent:"space-around",
-        height:"2.5rem",
-        marginTop:"0.75rem"
+        height:2.5*16,
+        marginTop:0.75*16
     },
     button:{
-        border:"1px solid #00BF69",
+      borderColor: "#00BF69",
+      borderWidth: 1,
+      borderStyle: "solid",
         backgroundColor:"#0D131B",
-        width:"40%",
-        marginTop:"1rem",
-        marginBottom:"1rem"
+        width:wp("40%"),
+        marginTop:1*16,
+        marginBottom:1*16
     },
     buttonText:{
         color:"#00BF69",
         fontFamily:'CoolveticaRg'
     },
     image1:{
-        height:"6rem",
-        width: "6rem"
+        height:6*16,
+        width: 6*16
     },
     image2:{
-        height:"1.5rem",
-        width:"1.5rem",
-        marginTop:"-1.25rem",
-        marginLeft:"4rem"
+        height:1.5*16,
+        width:1.5*16,
+        marginTop:-1.25*16,
+        marginLeft:4*16
     },
     image3:{
-        width:"100%",
-        height:"2rem"
+        width:wp("32.5%"),
+        height:2*16
     }
   });
   

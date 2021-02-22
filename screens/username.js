@@ -3,6 +3,7 @@ import {StyleSheet, View, Text, TextInput} from 'react-native'
 import _Button from "../components/button"
 import {connect} from 'react-redux'
 import { useFocusEffect } from '@react-navigation/native';
+import {widthPercentageToDP as wp, heightPercentageToDP as hp} from 'react-native-responsive-screen';
 
 const mapDispatchToProps=(dispatch)=>{
     return{
@@ -37,50 +38,53 @@ function Username(props){
 const styles = ({
     container: {
         flex: 1,
+        display:"flex",
         backgroundColor: '#00070F',
+        flexDirection:"column",
         alignItems: 'center',
-        padding:"1.5rem"
+        padding:1.5*16,
+        width: wp("100%")
     },
     buttonText:{
         fontFamily:'CoolveticaRg',
-        fontSize:"1rem"
+        fontSize:1*16
     },
     top:{
-        fontSize:"1.5rem",
-        marginTop:"0.5rem",
+        fontSize:1.5*16,
+        marginTop:0.5*16,
         color:"#fff",
         fontFamily:'CoolveticaRg'
     },
     top2:{
-        fontSize:"0.75rem",
-        marginTop:"0.25rem",
+        fontSize:0.75*16,
+        marginTop:0.25*16,
         color:"#fff",
-        opacity:"50%",
+        opacity:0.5,
         fontFamily:'CoolveticaRg'
     },
     overBar:{
         display:"flex",
-        marginTop:"6rem", 
-        padding:"1rem", 
-        height: "3.5rem", 
+        marginTop:6*16, 
+        padding:1*16, 
+        height: 4.5*16, 
         justifyContent:"space-around", 
         alignItems:"center", 
         flexDirection:"row",
-        marginBottom:"6rem",
-        width: "80%" 
+        marginBottom:6*16,
+        width: wp("50%"),
     },
     at:{
-        fontSize:"2rem",
-        fontWeight:"700",
+        fontSize:2*16,
+        fontWeight:700,
         color:"#fff",
         fontFamily:'CoolveticaRg'
     },
     input:{
-        fontWeight:"700", 
+        fontWeight:700, 
         color:"#fff",
-        marginLeft:"0.5rem",
-        fontSize:"2rem",
-        width:"75%",
+        marginLeft:0.5*16,
+        fontSize:2*16,
+        width:wp("35%"),
         fontFamily:'CoolveticaRg'
     }
   });
